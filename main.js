@@ -1,5 +1,3 @@
-// https://perspectanalytics.atlassian.net/rest/api/3/issue/IMB10-540?fields=assignee
-
 let assigneeCache = new Map();
 async function getAssignee(ticket) {
     let result = assigneeCache.get(ticket);
