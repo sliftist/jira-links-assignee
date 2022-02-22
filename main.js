@@ -43,6 +43,5 @@ function apply() {
         console.warn(`Updating jira links took a long time (${time}ms)`);
     }
 }
-apply();
 
 setInterval(apply, 5000);
