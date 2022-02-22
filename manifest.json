@@ -1,0 +1,18 @@
+{
+    "name": "Jira Issue Assignee",
+    "version": "0.1",
+    "description": "Show assignee next to issue links",
+    "homepage_url": "https://github.com/sliftist/jira-links-assignee",
+    "manifest_version": 3,
+    "icons": { "128" : "icon128.png" },
+    "content_scripts": [
+        {
+            "matches": ["https://atlassian.net/*", "https://*.atlassian.net/*"],
+            "js": ["./main.js"]
+        }
+    ],
+    "permissions": [
+        "https://atlassian.net/*",
+        "https://*.atlassian.net/*"
+    ]
+}
